@@ -1,14 +1,16 @@
 import cytest
 
+
 class A:
     def __init__(self, *args):
         self.args = args
+
     def __str__(self):
         return "this is the content of A: {}".format(self.args)
 
 a = A(1, 2, 3)
 cytest.set_pointer(a)
-# at this point a is still referenced so print it and
+# at this point a is still referenced so printing it and
 # printing the result of ctyest.get_pointer() gives the same result
 print(a)
 print(cytest.get_pointer())
