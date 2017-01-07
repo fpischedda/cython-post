@@ -5,6 +5,8 @@ This repo contains the sources used to demonstrate what happens
 when playing with cython and dangling pointers while wrapping c code
 that stores pointers to python objects.
 
+Please have a look at this [little post](https://francesco.pischedda.info/posts/cython-and-c-pointers/) about the problem.
+
 This repo contains:
 * cytest.pyx : the cython code that generates the c code that stores the pointers
 * segfault.py : a script that triggers a segmentation fault
